@@ -13,7 +13,7 @@ from sentence_transformers import SentenceTransformer
 
 
 # logging
-logging.basicConfig(filename="examploggerle.log", level=logging.INFO)
+logging.basicConfig(filename="logfile.log", level=logging.INFO)
 
 
 class TextEmbedding:
