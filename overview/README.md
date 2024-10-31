@@ -9,7 +9,7 @@ To migrate from full-text search to semantic search we can create an retrieval a
 
 1. Using a pre-trained LM to convert all the data (assuming docs) into embeddings.
 2. Store these embeddings in to a vector db:
-    - Need to decide if we need a dedicated Vector DB or a general purpose FB with vector capabilities.
+    - Need to decide if we need a dedicated Vector DB or a general purpose DB with vector capabilities.
     - Also how conservative we want the solution to be - managed or self-hosted DB.
 3. Design a retriever that takes in a query (visitor question) and give back the possible docs.
 4. Train a reranker that improves the retrieved result and puts the relevant docs over the less relevant ones.
